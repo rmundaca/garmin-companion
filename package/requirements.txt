@@ -1,0 +1,11 @@
+# Exact versions installed and tested on the NAS (Entware Python 3.11, i686).
+# FastAPI < 0.100 and Pydantic 1: pydantic-core (Rust) has no i686 binaries.
+fastapi==0.99.1
+pydantic==1.10.26
+uvicorn==0.54.0
+APScheduler==3.11.3
+SQLAlchemy==2.1.3
+# 0.3.3+ requires Python 3.12
+garminconnect==0.3.2
+# Compiled: this version works on i686
+curl_cffi==0.16.3

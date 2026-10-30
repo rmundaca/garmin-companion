@@ -1,0 +1,4 @@
+# Scripts run on the NAS (Linux): always LF, even if core.autocrlf converts everything else
+*.sh text eol=lf
+# Windows batch files: CRLF
+*.bat text eol=crlf

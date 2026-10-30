@@ -1,0 +1,5 @@
+[en]
+Garmin Companion is a lightweight, self-hosted adaptive running platform for Asustor NAS, featuring Jack Daniels VDOT pacing, structured workouts, and direct Garmin Connect sync.
+
+[es]
+Garmin Companion es una plataforma de entrenamiento running adaptativa para NAS Asustor, con ritmos VDOT Jack Daniels, entrenamientos estructurados con alertas de ritmo y sincronización directa con Garmin Connect.

@@ -1,0 +1,4 @@
+# Tests only (not installed on the NAS).
+# httpx 0.28 removed the app= argument used by FastAPI < 0.100's TestClient
+httpx<0.28
+pytest

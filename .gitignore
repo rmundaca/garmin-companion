@@ -1,0 +1,61 @@
+# Python byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite databases, journals & locks
+package/data/*.db
+package/data/*.db-shm
+package/data/*.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Runtime data (SQLite DB, session secret, Garmin tokens, logs)
+package/data/
+*.key
+*.tmp
+
+# Garmin session tokens & private auth credentials
+garmin_tokens/
+garmin_tokens.json
+garmin_tokens_*.json
+.env
+.env.*
+
+# Build artifacts (APK packages)
+dist/
+build/
+*.apk
+*.egg-info/
+
+# Log files
+*.log
+
+# Test & tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local-only notes (not published)
+Plan.md
+
+# Local Claude Code instructions
+CLAUDE.md
