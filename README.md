@@ -11,6 +11,23 @@
 
 ---
 
+<p align="center">
+  <img src="docs/screenshots/today.png" width="200" alt="Today: countdown, race prediction and next workout">
+  <img src="docs/screenshots/plan.png" width="200" alt="Plan: weekly volume chart and phases">
+  <img src="docs/screenshots/workout.png" width="200" alt="Structured interval workout">
+  <img src="docs/screenshots/progress.png" width="200" alt="Progress: fitness, forecast, compliance and load">
+</p>
+
+## Why this app?
+
+Garmin Companion is an **experiment** to test Jack Daniels' **VDOT training system** on an Garmin watch. A race result sets your paces, the plan is periodized from them, every session lands on the watch as a structured workout with pace targets, and the runs that come back are used to check whether the paces still fit.
+
+It is also a **free, self-hosted alternative to paid coaching apps** such as Runna. There is no subscription
+and no cloud service: the app runs on your own NAS or computer, your training data stays at home, and the
+rules behind every plan are open and documented in [docs/ALGORITHM.md](docs/ALGORITHM.md). 
+
+it is important to remark: this app works in a deterministic way, adjusted by the results of the executed training sessions. No AI is used to set plans. 
+
 ## Features
 
 | | |
@@ -24,6 +41,60 @@
 
 Works on phone and desktop (installable as a web app), in English and Spanish (detected from the browser),
 with light and dark themes. How plans are built is explained in detail in [docs/ALGORITHM.md](docs/ALGORITHM.md).
+
+## Screenshots
+
+**Create a plan** in three steps: goal race and course, the days you can run, and a recent result (suggested
+from your Garmin records) that sets your fitness and paces.
+
+<p align="center">
+  <img src="docs/screenshots/wizard-1.png" width="200" alt="New plan, step 1: goal race">
+  <img src="docs/screenshots/wizard-2.png" width="200" alt="New plan, step 2: training days and experience">
+  <img src="docs/screenshots/wizard-3.png" width="200" alt="New plan, step 3: current level">
+</p>
+
+**Follow the plan** week by week through its phases, add tune-up races, and look back at finished plans.
+
+<p align="center">
+  <img src="docs/screenshots/plan-week.png" width="200" alt="Plan: sessions of the current week">
+  <img src="docs/screenshots/plan-races.png" width="200" alt="Plan: taper, race week and tune-up races">
+  <img src="docs/screenshots/history.png" width="200" alt="History of a completed plan">
+</p>
+
+**Run it on your watch.** Each session has warm-up, work and recovery steps with pace ranges. After the run,
+the app compares each work block with its target.
+
+<p align="center">
+  <img src="docs/screenshots/workout.png" width="200" alt="Workout steps with target paces">
+  <img src="docs/screenshots/workout-blocks.png" width="200" alt="Completed run: pace on target and work blocks">
+</p>
+
+**Adapt.** Rate how each run felt; every 2 weeks the app asks how you feel and proposes changes, and a
+tune-up race result can update your paces.
+
+<p align="center">
+  <img src="docs/screenshots/today-checkins.png" width="200" alt="Two-week review and tune-up race result">
+  <img src="docs/screenshots/review.png" width="200" alt="Proposal for the coming weeks">
+  <img src="docs/screenshots/today-dark.png" width="200" alt="Today screen in the dark theme">
+</p>
+
+**Track progress**: estimated fitness per session, race predictions, aerobic efficiency, intensity balance,
+training load and compliance.
+
+<p align="center">
+  <img src="docs/screenshots/progress-1.png" width="200" alt="Fitness trend and race predictions">
+  <img src="docs/screenshots/progress-2.png" width="200" alt="Aerobic efficiency and intensity distribution">
+  <img src="docs/screenshots/progress-4.png" width="200" alt="Training load and compliance">
+</p>
+
+**Sign in** with a Garmin token, choose language, theme and colors, and read the built-in guide to how the
+engine works.
+
+<p align="center">
+  <img src="docs/screenshots/login.png" width="200" alt="Sign in with a Garmin token">
+  <img src="docs/screenshots/settings.png" width="200" alt="Settings: Garmin account, language, theme and paces">
+  <img src="docs/screenshots/help.png" width="200" alt="Built-in guide: how it works">
+</p>
 
 > [!NOTE]
 > Garmin Companion uses [garminconnect](https://github.com/cyberjunky/python-garminconnect), an
